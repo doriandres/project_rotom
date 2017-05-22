@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    
+	<title>PROJECT ROTOM</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/materialize.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body class="blue-grey lighten-2" >
+<div style="background:url('assets/media/landscape.png'); background-size:80%; background-repeat:norepeat; position:fixed; width:100%; height:100%;"></div>    
+<header>
+  <div class="navbar-fixed">
+      <nav class="" role="navigation" style="background-color: rgba(255, 255, 255, 0.8);">
+        <div class="nav-wrapper container">
+             <a href="#" class="brand-logo center"><i class="material-icons blue-text text-darken-2">flash_on</i><span class="thin blue-text text-darken-2">Project </span><span class="medium italic blue-text text-darken-2">Rotom</span></a>
+        </div>
+      </nav>
+    </div>
+</header>
+<main>
+    <div class="row" style="margin-bottom:0px !important;">
+      <div class="col s10">
+       <div class="row" style="margin-bottom:0px !important;">
+            <div class="col s11 offset-s1">
+                 <div class="container card rounded" style="background-color: rgba(255, 255, 255, 0.6);  border-radius:10px;">
+                      <div class="row" style="margin-bottom:0px !important;">
+                          <div class="container">
+                            <br>  
+                            <h5>Cuadro de código</h5>
+                            <div class="row" style="background-color: rgba(255, 255, 255, 0.8);     border-radius:10px; margin-bottom:0px !important;">
+                                <div id="rows_counter" class="col s1">
+                                    <pre>
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+                                    </pre>
+                                </div>  
+                                <div class="col s11">    
+                                      <pre style="height:230px; width:450px; overflow:hidden;">
+<textarea id="test" style="height:230px; width:450px; resize:none;" placeholder="Escribe el código aquí"></textarea>
+                                      </pre>
+
+                                </div>
+                            </div>
+                            <button onclick="compile()" id="done" class="btn green disabled" type="button" style="margin-bottom:15px;">Listo
+                                <i class="material-icons right">send</i>
+                            </button> 
+                          </div>
+                      </div>  
+                </div>
+            </div>
+        </div>
+      </div>
+      <div class="col s2">
+        <div style="position:relative;">
+            <br>
+            <br>
+        <!--       -->
+            <img style="position:absolute; left:-280px;" width="370px" src="assets/media/rotomdex.gif"> 
+        </div>         
+      </div>
+    </div>
+</main>
+<footer>
+   <div class="row" style="margin-bottom:5px !important;">
+    <div class="col s10 offset-s1">
+        <ul class="collection">
+            <li id="dialog" class="collection-item avatar" style="background-color: rgba(255, 255, 255, 0.8);  border-radius:10px; font-size:23px;">
+                <img src="assets/media/rotomdex.gif" alt="Rotom!" class="circle">
+                <p id="dialog_text" class="flow-text" >
+                </p>
+                <a href="#" onclick="next_line('0')" class="secondary-content">
+                    <i id="dialog_arrow" style="visibility:visible;" class="material-icons">arrow_drop_down</i>
+                </a>
+            </li>
+        </ul>   
+    </div> 
+   </div>
+</footer>  
+<script type="text/javascript" src="assets/js/jquery-3.1.0.min.js"></script>
+<script type="text/javascript" src="assets/js/materialize.js"></script>
+<script type="text/javascript" src="assets/js/functions.js"></script>
+</body>
+</html>
